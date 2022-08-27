@@ -12,6 +12,11 @@ Analyze a business problem in the mail-order catalog business and predict how mu
 [Go to Report](Project-1_Predicting-Catalog-Demand/Project-1_Report.png)
 
 ## Project 2 - Create an Analytical Dataset
-Pawdacity is a leading pet store chain in Wyoming with 13 stores throughout the state. This year, Pawdacity would like to expand and open a 14th store. Your manager has asked you to perform data wrangling on the dataset by blending, formatting, and dealing with outliers to prepare it for analysis and recommend the city for Pawdacity’s newest store, based on predicted yearly sales.
+Pawdacity is a leading pet store chain in Wyoming with 13 stores throughout the state. This year, Pawdacity would like to expand and open a 14th store. You to perform data wrangling on the dataset by blending, formatting, and dealing with outliers to prepare it for analysis and recommend the city for Pawdacity’s newest store, based on predicted yearly sales.
 
 [Go to Report](Project-2_Create-an-Analytical-Dataset/Project-2_Report.png)
+
+## Project 3 - Predicting Default Risk
+You are a loan officer at a young and small bank (been in operations for two years) that needs to come up with an efficient solution to classify new customers on whether they can be approved for a loan or not. You'll use a series of classification models to figure out the best model and provide a list of creditworthy customers to your manager.
+
+[Go to Report](Project-3_Predicting-Default-Risk/Project-3_Report.png)
