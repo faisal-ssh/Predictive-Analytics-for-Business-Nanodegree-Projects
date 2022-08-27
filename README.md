@@ -11,7 +11,7 @@ Analyze a business problem in the mail-order catalog business and predict how mu
 
 [Go to Report](Project-1_Predicting-Catalog-Demand/Project-1_Report.png)
 
-## Project 3 - Create an Analytical Dataset
+## Project 2 - Create an Analytical Dataset
 Pawdacity is a leading pet store chain in Wyoming with 13 stores throughout the state. This year, Pawdacity would like to expand and open a 14th store. Your manager has asked you to perform data wrangling on the dataset by blending, formatting, and dealing with outliers to prepare it for analysis and recommend the city for Pawdacity’s newest store, based on predicted yearly sales.
 
 [Go to Report](Project-2_Create-an-Analytical-Dataset/Project-2_Report.png)
