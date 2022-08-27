@@ -1,0 +1,377 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2021.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="56">D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aggregated_historical_stores_sales.xlsm
+Query=`store_sales$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" size="255" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="V_String" />
+            <Field name="Month" size="255" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="V_String" />
+            <Field name="Sum_Produce" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="56">D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast_existing_stores.xlsm
+Query=`forecast_existing_stores$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" />
+            <Field name="Month" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" />
+            <Field name="Forecast_Existing_Store_Produce_Sales" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="56">D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`</File>
+          <FormatSpecificOptions>
+            <FirstRowData>False</FirstRowData>
+            <ImportLine>1</ImportLine>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>forecast_new_stores.xlsm
+Query=`forecast_new_stores$`</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Year" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" />
+            <Field name="Month" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" />
+            <Field name="Forecast_New_Store_Produce_Sales" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="378" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="Year" size="255" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="V_String" column="1" />
+                <Field name="Month" size="255" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="V_String" column="2" />
+                <Field name="Sum_Produce" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\aggregated_historical_stores_sales.xlsm|||`store_sales$`" type="Double" column="3" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="Year" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" column="1" />
+                <Field name="Month" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" column="2" />
+                <Field name="Forecast_Existing_Store_Produce_Sales" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_existing_stores.xlsm|||`forecast_existing_stores$`" type="Double" column="4" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#3">
+              <RecordInfo>
+                <Field name="Year" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" column="1" />
+                <Field name="Month" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" column="2" />
+                <Field name="Forecast_New_Store_Produce_Sales" source="File: D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\forecast_new_stores.xlsm|||`forecast_new_stores$`" type="Double" column="5" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="558" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="Year" />
+            <Field field="Month" />
+          </KeyFields>
+          <DataFields>
+            <Field field="Year" selected="False" />
+            <Field field="Month" selected="False" />
+            <Field field="Actual" selected="True" />
+            <Field field="Forecast Existing" selected="True" />
+            <Field field="Forecast New" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="654" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Name" selected="True" rename="Category" type="V_String" size="17" />
+            <SelectField field="Value" selected="True" rename="Sales" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="750" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>Sales</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2022-02-14 22:46:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2022-02-14 22:46:23</StartDate>
+              <EndDate>2022-02-14 22:46:23</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([Sales])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="462" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_Produce" selected="True" rename="Actual" />
+            <SelectField field="Forecast_Existing_Store_Produce_Sales" selected="True" rename="Forecast Existing" />
+            <SelectField field="Forecast_New_Store_Produce_Sales" selected="True" rename="Forecast New" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1002" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="56">D:\Self-Development\Udacity\Predictive Analytics for Business Nanodegree Program\Project 7 (Capstone)\Combined_Actual,Existing,New_Sales.xlsm|||Combined_Sales</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <PreserveFormat>False</PreserveFormat>
+            <SkipFieldNames>False</SkipFieldNames>
+            <OutputOption>Create</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Combined_Actual,Existing,New_Sales.xlsm
+Query=Combined_Sales</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="846" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Month]+'-01-'+[Year]" field="Date" size="2147483647" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Date = [Month]+'-01-'+[Year]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection name="#1">
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="True" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task-3_Prepare_for_Tableau</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7b711b00-46cd-4301-8323-3eadfb8e6e8e" />
+      <Telemetry>
+        <PreviousWorkflowId value="2fdbe768-6093-421a-8257-6f49589eec42" />
+        <OriginWorkflowId value="2fdbe768-6093-421a-8257-6f49589eec42" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
