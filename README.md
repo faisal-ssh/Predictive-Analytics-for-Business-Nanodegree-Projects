@@ -34,4 +34,4 @@ You're a business analyst for Round Roasters, a coffee restaurant in the United 
 to figure whether the new menu can drive enough sales to offset the cost of marketing the new menu. Your job is to analyze the A/B test and write up a recommendation 
 to whether the Round Roasters chain should launch this new menu.
 
-[Go to Report](Project-4_A/B-Test-a-New-Menu-Launch/Project-4_Report.png)
+[Go to Report](Project-4_AB-Test-a-New-Menu-Launch/Project-4_Report.png)
