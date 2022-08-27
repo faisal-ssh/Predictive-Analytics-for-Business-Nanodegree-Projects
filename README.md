@@ -35,3 +35,16 @@ to figure whether the new menu can drive enough sales to offset the cost of mark
 to whether the Round Roasters chain should launch this new menu.
 
 [Go to Report](Project-4_AB-Test-a-New-Menu-Launch/Project-4_Report.png)
+
+## Project 5 - Combining Predictive Techniques 
+Your company currently has 85 grocery stores and is planning to open 10 new stores at the beginning of the year. Currently, all stores use the same store format for 
+selling their products. Up until now, the company has treated all stores similarly, shipping the same amount of product to each store. This is beginning to cause 
+problems as stores are suffering from product surpluses in some product categories and shortages in others. You've been asked to provide analytical support to make 
+decisions about store formats and inventory planning.<br><br>
+**The project has three main tasks:**
+1. Determining store format for existing stores based on sales data.
+2. Determining the store format for new stores by predicting which segment a store falls into based on the demographic and socioeconomic characteristics of the 
+population that resides in the area around each new store.
+3. Forecasting produce sales for existing and new stores.
+
+[Go to Report](Project-5_Combining-Predictive-Techniques/Project-5_Report.png)
